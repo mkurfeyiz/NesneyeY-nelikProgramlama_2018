@@ -15,7 +15,6 @@ public class kume {
     int elem_sayisi;
     int i=0;
     ArrayList<Integer>kume1=new ArrayList<Integer>();
-    int[] b;
     kume(){
         
     }
@@ -25,7 +24,7 @@ public class kume {
             kume1.add(a[i]);
         }
     }
-    public kume(kume a){
+     kume(kume a){
         for(i=0;i<this.kume1.size();i++)
         {
             a.kume1.add(this.kume1.get(i));
@@ -51,6 +50,7 @@ public class kume {
             }
             else{
                 sonuc=false;
+                break;
             }
         }
         if(sonuc==true)
@@ -67,8 +67,10 @@ public class kume {
             {
                 sonuc=true;
             }
-            else
+            else{
                 sonuc=false;
+                break;
+            }
         }
         if(sonuc==true)
             System.out.println("Esit");
@@ -84,8 +86,3 @@ public class kume {
         return a;
     }
 }
-
-
-
-
-
